@@ -15,7 +15,7 @@ public class Main {
             String op = sc.nextLine().trim();
 
             switch (op) {
-                case "1":
+                case "1": 
                     runOption1(sc);
                     break;
                 case "2":
