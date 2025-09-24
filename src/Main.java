@@ -55,7 +55,7 @@ public class Main {
             int totalFrames = askInt(sc, "Número total de marcos (múltiplo de procesos): ");
 
             while (nproc <= 0 || totalFrames <= 0 || (totalFrames % nproc != 0)) {
-                System.out.println("✖ Regla: totalFrames debe ser múltiplo de nproc y ambos > 0.");
+                System.out.println("Regla: totalFrames debe ser múltiplo de nproc y ambos > 0.");
                 nproc = askInt(sc, "Número de procesos: ");
                 totalFrames = askInt(sc, "Número total de marcos (múltiplo de procesos): ");
             }
