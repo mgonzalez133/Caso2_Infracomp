@@ -33,14 +33,14 @@ public class Main {
     // ===================== Opción 1: Generador =====================
     private static void runOption1(Scanner sc) {
         try {
-            Path config = askPath(sc, "Ruta del archivo de configuración (ENTER = config.txt): ", "config.txt");
+            Path config = askPath(sc, " Digite la ruta del archivo de configuración (ENTER = config.txt): ", "config.txt");
            
-            Path outDir = askPath(sc, "Carpeta de salida (ENTER = ./src): ", "src");
+            Path outDir = askPath(sc, "Digite nombre de la carpeta de  los archivos de salida (ENTER = ./src): ", "src");
 
             
             Generador.generate(config, outDir);
 
-            System.out.println("Archivos proc<i>.txt generados en: " + outDir.toAbsolutePath());
+            System.out.println(" Digite el nombre de la carpeta con archivos proc<i>.txt generados en: " + outDir.toAbsolutePath());
         } catch (Throwable t) {
             System.out.println("No se pudo ejecutar la opción 1: " + t.getMessage());
             
